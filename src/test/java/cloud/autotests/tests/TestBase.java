@@ -27,7 +27,6 @@ public class TestBase {
     public void addAttachments() throws InterruptedException {
         String sessionId = DriverUtils.getSessionId();
 
-        sleep(7000);
         AllureAttachments.addScreenshotAs("Last screenshot");
         AllureAttachments.addPageSource();
         AllureAttachments.addBrowserConsoleLogs();
