@@ -12,6 +12,8 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.extension.ExtendWith;
 
+import static java.lang.Thread.sleep;
+
 
 @ExtendWith({AllureJunit5.class})
 public class TestBase {
@@ -22,9 +24,10 @@ public class TestBase {
     }
 
     @AfterEach
-    public void addAttachments() {
+    public void addAttachments() throws InterruptedException {
         String sessionId = DriverUtils.getSessionId();
 
+        sleep(7000);
         AllureAttachments.addScreenshotAs("Last screenshot");
         AllureAttachments.addPageSource();
         AllureAttachments.addBrowserConsoleLogs();
