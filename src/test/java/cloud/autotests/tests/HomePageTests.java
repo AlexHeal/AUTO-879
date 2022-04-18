@@ -1,6 +1,7 @@
 package cloud.autotests.tests;
 
 import cloud.autotests.helpers.DriverUtils;
+import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
 import io.qameta.allure.Description;
 import org.junit.jupiter.api.DisplayName;
@@ -33,28 +34,31 @@ public class HomePageTests extends TestBase {
         });
 
         step("Scroll to 'List slider'", () -> {
-            $("#list-slider").scrollTo().scrollTo();
+            $("#list-slider").scrollIntoView(true).scrollIntoView(true);
             $(".w-slide").shouldHave(text("Scheduling"));
         });
 
         step("Verify text on all slides", () -> {
-            $$(".ls-nav-next").filterBy(visible).first().as("next slide btn").click();
-            $$(".w-slide").filterBy(visible).first().shouldHave(text("Patient intake"));
+            SelenideElement nextSlideBtn = $$(".ls-nav-next").filterBy(visible).first();
+            SelenideElement slideTitle = $$(".w-slide").filterBy(visible).first();
 
-            $$(".ls-nav-next").filterBy(visible).first().as("next slide btn").click();
-            $$(".w-slide").filterBy(visible).first().shouldHave(text("Reminders & instructions"));
+            nextSlideBtn.click();
+            slideTitle.shouldHave(text("Patient intake"));
 
-            $$(".ls-nav-next").filterBy(visible).first().as("next slide btn").click();
-            $$(".w-slide").filterBy(visible).first().shouldHave(text("Video visits"));
+            nextSlideBtn.click();
+            slideTitle.shouldHave(text("Reminders & instructions"));
 
-            $$(".ls-nav-next").filterBy(visible).first().as("next slide btn").click();
-            $$(".w-slide").filterBy(visible).first().shouldHave(text("No-show engagement"));
+            nextSlideBtn.click();
+            slideTitle.shouldHave(text("Video visits"));
 
-            $$(".ls-nav-next").filterBy(visible).first().as("next slide btn").click();
-            $$(".w-slide").filterBy(visible).first().shouldHave(text("Feedback & reviews"));
+            nextSlideBtn.click();
+            slideTitle.shouldHave(text("No-show engagement"));
 
-            $$(".ls-nav-next").filterBy(visible).first().as("next slide btn").click();
-            $$(".w-slide").filterBy(visible).first().shouldHave(text("Follow-up"));
+            nextSlideBtn.click();
+            slideTitle.shouldHave(text("Feedback & reviews"));
+
+            nextSlideBtn.click();
+            slideTitle.shouldHave(text("Follow-up"));
         });
 
         step("Scroll to 'free-demo block'", () -> {
@@ -70,8 +74,6 @@ public class HomePageTests extends TestBase {
 
             assertThat(actualUrl).isEqualTo(expectedUrl);
         });
-
-
     }
 
     @Test
