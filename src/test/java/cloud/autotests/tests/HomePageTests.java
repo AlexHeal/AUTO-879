@@ -1,6 +1,7 @@
 package cloud.autotests.tests;
 
 import cloud.autotests.helpers.DriverUtils;
+import com.codeborne.selenide.WebDriverRunner;
 import io.qameta.allure.Description;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -54,6 +55,20 @@ public class HomePageTests extends TestBase {
 
             $$(".ls-nav-next").filterBy(visible).first().as("next slide btn").click();
             $$(".w-slide").filterBy(visible).first().shouldHave(text("Follow-up"));
+        });
+
+        step("Scroll to 'free-demo block'", () -> {
+            $("#free-demo").scrollTo().scrollTo();
+            $(byText("It’s easy to get started. Get a live demo today!")).shouldBe(visible);
+        });
+
+        step("Open Free Demo'", () -> {
+            $(".klara-button-text").shouldBe(visible, text("Free demo")).click();
+            $(byText("See how Klara can help improve practice efficiency and make patients happier.")).shouldBe(visible);
+            String expectedUrl = "https://www.klara.com/free-demo/klara-consultation";
+            String actualUrl = WebDriverRunner.url();
+
+            assertThat(actualUrl).isEqualTo(expectedUrl);
         });
 
 
