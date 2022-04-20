@@ -101,4 +101,4 @@ gradle clean test
 
 ## <img title="Selenoid" src="artefacts/logo/Selenoid.svg" width="25" height="25" alt="Selenoid"/></a> Видео прохождения теста
 
-
+https://user-images.githubusercontent.com/24870446/164145218-aea61f76-56ff-490e-b63f-51e441417b5b.mp4
