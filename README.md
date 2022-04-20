@@ -2,20 +2,20 @@
 
 ## :mag: Содержание:
 
-- [Технологии и инструменты](#earth_africa-технологии-и-инструменты)
-- [Реализованные проверки](#earth_africa-Реализованные-проверки)
-- [Сборка в Jenkins](#earth_africa-Jenkins-job)
-- [Запуск из терминала](#earth_africa-Запуск-тестов-из-терминала)
-- [Allure отчет](#earth_africa-Allure-отчет)
-- [Отчет в Telegram](#earth_africa-Уведомление-в-Telegram-при-помощи-бота)
-- [Видео примеры прохождения тестов](#earth_africa-Примеры-видео-о-прохождении-тестов)
+- [Технологии и инструменты](#технологии-и-инструменты)
+- [Реализованные проверки](#white_check_mark-реализованные-проверки)
+- [Сборка в Jenkins](#-jenkins--job-)
+- [Запуск из терминала](#запуск-тестов-из-терминала)
+- [Allure отчет](#-отчет-в-allure-report)
+- [Отчет в Telegram](#-уведомление-в-telegram-при-помощи-бота)
+- [Видео примеры прохождения тестов](#-видео-прохождения-теста)
 
 ##  Технологии и инструменты
 
 <p align="center">
 <a href="https://www.jetbrains.com/idea/"><img src="artefacts/logo/Idea.svg" width="50" height="50"  alt="IDEA"/></a>
 <a href="https://www.java.com/"><img src="artefacts/logo/Java.svg" width="50" height="50"  alt="Java"/></a>
-<a href="https://github.com/"><img src="artefacts/logo/GitHub.svg" width="50" height="50"  alt="Github"/></a>
+<a href="https://github.com/"><img src="artefacts/logo/github.svg" width="50" height="50"  alt="Github"/></a>
 <a href="https://junit.org/junit5/"><img src="artefacts/logo/Junit5.svg" width="50" height="50"  alt="JUnit 5"/></a>
 <a href="https://gradle.org/"><img src="artefacts/logo/Gradle.svg" width="50" height="50"  alt="Gradle"/></a>
 <a href="https://selenide.org/"><img src="artefacts/logo/Selenide.svg" width="50" height="50"  alt="Selenide"/></a>
