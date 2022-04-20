@@ -13,15 +13,15 @@
 ##  Технологии и инструменты
 
 <p align="center">
-<a href="https://www.jetbrains.com/idea/"><img src="images/logo/Idea.svg" width="50" height="50"  alt="IDEA"/></a>
-<a href="https://www.java.com/"><img src="images/logo/Java.svg" width="50" height="50"  alt="Java"/></a>
-<a href="https://github.com/"><img src="images/logo/GitHub.svg" width="50" height="50"  alt="Github"/></a>
-<a href="https://junit.org/junit5/"><img src="images/logo/Junit5.svg" width="50" height="50"  alt="JUnit 5"/></a>
-<a href="https://gradle.org/"><img src="images/logo/Gradle.svg" width="50" height="50"  alt="Gradle"/></a>
-<a href="https://selenide.org/"><img src="images/logo/Selenide.svg" width="50" height="50"  alt="Selenide"/></a>
-<a href="https://aerokube.com/selenoid/"><img src="images/logo/Selenoid.svg" width="50" height="50"  alt="Selenoid"/></a>
-<a href="https://github.com/allure-framework/allure2"><img src="images/logo/Allure.svg" width="50" height="50"  alt="Allure"/></a>
-<a href="https://www.jenkins.io/"><img src="images/logo/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>
+<a href="https://www.jetbrains.com/idea/"><img src="artefacts/logo/Idea.svg" width="50" height="50"  alt="IDEA"/></a>
+<a href="https://www.java.com/"><img src="artefacts/logo/Java.svg" width="50" height="50"  alt="Java"/></a>
+<a href="https://github.com/"><img src="artefacts/logo/GitHub.svg" width="50" height="50"  alt="Github"/></a>
+<a href="https://junit.org/junit5/"><img src="artefacts/logo/Junit5.svg" width="50" height="50"  alt="JUnit 5"/></a>
+<a href="https://gradle.org/"><img src="artefacts/logo/Gradle.svg" width="50" height="50"  alt="Gradle"/></a>
+<a href="https://selenide.org/"><img src="artefacts/logo/Selenide.svg" width="50" height="50"  alt="Selenide"/></a>
+<a href="https://aerokube.com/selenoid/"><img src="artefacts/logo/Selenoid.svg" width="50" height="50"  alt="Selenoid"/></a>
+<a href="https://github.com/allure-framework/allure2"><img src="artefacts/logo/Allure.svg" width="50" height="50"  alt="Allure"/></a>
+<a href="https://www.jenkins.io/"><img src="artefacts/logo/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>
 </p>
 
 ## :white_check_mark: Реализованные проверки
@@ -30,9 +30,10 @@
 - ✓ Соответствие заголовка на домашней странице
 - ✓ Проверка наличия ошибок в console log
 
-## <img src="images/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Jenkins <a target="_blank" href="https://jenkins.autotests.cloud/job/Klara-autotests-demo/"> job </a>
+## <img src="artefacts/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Jenkins <a target="_blank" href="https://jenkins.autotests.cloud/job/Klara-autotests-demo/"> job </a>
 <p align="center">
-<a href="https://jenkins.autotests.cloud/job/Klara-autotests-demo/"><img src="artefacts/screens/JenkinsMainScreen.png" alt="Jenkins"/></a>
+<a href="https://jenkins.autotests.cloud/job/Klara-autotests-demo/">
+<img src="artefacts/screens/JenkinsMainScreen.png" alt="Jenkins"/></a>
 </p>
 
 ### Удаленный запуск тестов
@@ -64,28 +65,40 @@ gradle clean test
 > <code>THREADS</code> - количество одновременных запускаемых потоков для тестов.
 >
 
-##№ Запуск тестов из терминала
+### Запуск тестов из терминала
 
 ```bash
 gradle clean test
 ```
 
-## <img src="images/logo/Allure.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://jenkins.autotests.cloud/job/Klara-autotests-demo/15/allure">Allure report</a>
+## <img src="artefacts/logo/Allure.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://jenkins.autotests.cloud/job/Klara-autotests-demo/15/allure">Allure report</a>
 
 ### Основное окно
 
 <p align="center">
-<img title="Allure Overview Dashboard" src="images/screens/AllureMainScreen.png">
+<img title="Allure Overview Dashboard" src="artefacts/screens/AllureMainScreen.png">
 </p>
 
 ### Тесты
 
 <p align="center">
-<img title="Allure Tests" src="images/screens/AllureTestScreen.png">
+<img title="Allure Tests" src="artefacts/screens/AllureTestScreen.png">
 </p>
 
 ### Графики
 
 <p align="center">
-<img title="Allure Graphics" src="images/screens/AllureGrafScreen.png">
+<img title="Allure Graphics" src="artefacts/screens/AllureGrafScreen.png">
 </p>
+
+
+## <img title="Telegram" src="artefacts/logo/Telegram.svg" width="25" height="25" alt="Telegram"/></a> Уведомление в Telegram при помощи бота
+
+<p align="center">
+<img title="Allure Overview Dashboard" src="artefacts/screens/TelegramReport.png" >
+</p>
+
+
+## <img title="Selenoid" src="artefacts/logo/Selenoid.svg" width="25" height="25" alt="Selenoid"/></a> Видео прохождения теста
+
+
