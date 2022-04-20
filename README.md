@@ -90,4 +90,4 @@ gradle clean test
 <img title="Allure Graphics" src="images/screens/AllureGrafScreen.png">
 </p>
 
-https://github.com/AlexHeal/Klara-autotests-demo/blob/master/artefacts/video/862d90388d841cb8.mp4
+https://user-images.githubusercontent.com/24870446/164142646-50303f37-634d-4be6-b2c1-6a5976949770.mp4
