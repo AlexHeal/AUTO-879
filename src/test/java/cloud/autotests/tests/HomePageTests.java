@@ -1,5 +1,7 @@
 package cloud.autotests.tests;
 
+import cloud.autotests.config.Project;
+import cloud.autotests.config.ProjectConfig;
 import cloud.autotests.helpers.DriverUtils;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
@@ -20,8 +22,8 @@ public class HomePageTests extends TestBase {
     @Description("Verify that home page have content blocks")
     @DisplayName("Verify HomePage")
     void verifyHomePageTest() {
-        step("Open 'https://www.klara.com/'", () -> {
-            open("https://www.klara.com/");
+        step("Open Home page", () -> {
+            open("");
             $(".navbar-container").as("header").shouldBe(visible);
             $(".hero-video").as("background video").shouldBe(visible);
             $(".desktop-demo-text").as("free demo btn").shouldBe(visible, text("Free demo"));
@@ -69,7 +71,7 @@ public class HomePageTests extends TestBase {
         step("Open Free Demo'", () -> {
             $(".klara-button-text").shouldBe(visible, text("Free demo")).click();
             $(byText("See how Klara can help improve practice efficiency and make patients happier.")).shouldBe(visible);
-            String expectedUrl = "https://www.klara.com/free-demo/klara-consultation";
+            String expectedUrl = Project.config.baseUrl() + "free-demo/klara-consultation";
             String actualUrl = WebDriverRunner.url();
 
             assertThat(actualUrl).isEqualTo(expectedUrl);
