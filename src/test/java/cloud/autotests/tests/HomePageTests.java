@@ -1,7 +1,6 @@
 package cloud.autotests.tests;
 
 import cloud.autotests.config.Project;
-import cloud.autotests.config.ProjectConfig;
 import cloud.autotests.helpers.DriverUtils;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
@@ -15,7 +14,6 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
-
 
 public class HomePageTests extends TestBase {
     @Test
@@ -83,7 +81,7 @@ public class HomePageTests extends TestBase {
     @DisplayName("Page title should have header text")
     void titleTest() {
         step("Open url 'https://www.klara.com/'", () ->
-            open("https://www.klara.com/"));
+                open("https://www.klara.com/"));
 
         step("Page title should have text 'Klara – Patient Communication'", () -> {
             String expectedTitle = "Klara – Patient Communication";
@@ -98,7 +96,7 @@ public class HomePageTests extends TestBase {
     @DisplayName("Page console log should not have errors")
     void consoleShouldNotHaveErrorsTest() {
         step("Open url 'https://www.klara.com/'", () ->
-            open("https://www.klara.com/"));
+                open("https://www.klara.com/"));
 
         step("Console logs should not contain text 'SEVERE'", () -> {
             String consoleLogs = DriverUtils.getConsoleLogs();
@@ -108,3 +106,4 @@ public class HomePageTests extends TestBase {
         });
     }
 }
+
